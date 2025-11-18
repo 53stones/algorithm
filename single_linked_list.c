@@ -19,7 +19,7 @@ void Free_list(list *mylist)
 {
     free(mylist);
 }
-bool Sert_list(list *mylist, int i, int n)
+bool Insert_list(list *mylist, int i, int n)
 {
     if (i < 1 || mylist == NULL)
         return false;
@@ -37,7 +37,7 @@ bool Sert_list(list *mylist, int i, int n)
     p->next = s;
     return true;
 }
-bool Sert_list_front(list *mylist, int n)
+bool Insert_list_front(list *mylist, int n)
 {
     if (mylist == NULL)
         return false;
@@ -50,7 +50,7 @@ bool Sert_list_front(list *mylist, int n)
     p->next = q;
     return true;
 }
-bool Sert_list_behind(list *mylist, int n)
+bool Insert_list_behind(list *mylist, int n)
 {
     if (mylist == NULL)
         return false;

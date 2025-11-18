@@ -6,18 +6,6 @@ typedef struct
     int data[MAXSIZE];
     int length;
 } sequence;
-typedef struct
-{
-    int *data;
-    int length;
-} list;
-void Init_list(list *list) // 动态分配
-{
-    list->data = (int *)malloc(sizeof(int) * MAXSIZE);
-    list->length = 0;
-    return;
-}
-
 void Init_sequence(sequence *list) // 静态分配
 {
     for (int i = 0; i < MAXSIZE; i++)
